@@ -1,0 +1,161 @@
+/* Genel Stil Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/* ✨ Başlık */
+h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Neon Işık Efekti */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffdd44, 0 0 30px #ffd700, 0 0 40px #ffbb33;
+    }
+}
+
+/* 🎚️ Davul Kit Seçici */
+.kit-selector {
+    margin-bottom: 20px;
+}
+
+.kit-btn {
+    background: rgba(255, 215, 0, 0.2);
+    color: white;
+    border: 2px solid #ffd700;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.kit-btn:hover {
+    background: #ffd700;
+    color: black;
+    box-shadow: 0 0 20px #ffd700;
+}
+
+.kit-btn.active {
+    background: #ffd700;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ffdd44;
+}
+
+/* 🥁 Davul Tuşları */
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Tuş Stili (Glassmorphism + Neon Efekt) */
+.key {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Neon Işıklı Kenar */
+.key::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.3), transparent);
+    top: -50%;
+    left: -50%;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.key:hover::before {
+    top: 0;
+    left: 0;
+}
+
+/* Tuş İçeriği */
+.key span {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffd700;
+    z-index: 1;
+}
+
+.key small {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+/* 🎵 Basıldığında Efekt (Daha Yumuşak) */
+.playing {
+    transform: scale(1.15);
+    border-color: #ffd700;
+    box-shadow: 0 0 30px #ffd700;
+}
+
+/* 🟡 Tuşa Basıldığında Işık Efekti */
+.playing::before {
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.5), transparent);
+    top: 0;
+    left: 0;
+}
+
+/* 🌟 Copyright Footer */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}

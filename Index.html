@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Drum Kit</h1>
+
+    <!-- Davul Kit Seçimi -->
+    <div class="kit-selector">
+        <button class="kit-btn active" data-kit="kit_a">Kit A</button>
+        <button class="kit-btn" data-kit="kit_b">Kit B</button>
+        <button class="kit-btn" data-kit="kit_c">Kit C</button>
+        <button class="kit-btn" data-kit="kit_p">Kit P</button>
+    </div>
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <span>A</span>
+            <small>Clap</small>
+        </div>
+        <div data-key="83" class="key">
+            <span>S</span>
+            <small>Hihat</small>
+        </div>
+        <div data-key="68" class="key">
+            <span>D</span>
+            <small>Kick</small>
+        </div>
+        <div data-key="70" class="key">
+            <span>F</span>
+            <small>Openhat</small>
+        </div>
+        <div data-key="71" class="key">
+            <span>G</span>
+            <small>Boom</small>
+        </div>
+        <div data-key="72" class="key">
+            <span>H</span>
+            <small>Ride</small>
+        </div>
+        <div data-key="74" class="key">
+            <span>J</span>
+            <small>Snare</small>
+        </div>
+        <div data-key="75" class="key">
+            <span>K</span>
+            <small>Tom</small>
+        </div>
+        <div data-key="76" class="key">
+            <span>L</span>
+            <small>Tink</small>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024-2025 AHMET EMRE ARI. Tüm hakları saklıdır.</p>
+    </footer>
+    
+
+    <!-- Ses dosyaları (JS dinamik olarak değiştirecek) -->
+    <audio data-key="65"></audio>
+    <audio data-key="83"></audio>
+    <audio data-key="68"></audio>
+    <audio data-key="70"></audio>
+    <audio data-key="71"></audio>
+    <audio data-key="72"></audio>
+    <audio data-key="74"></audio>
+    <audio data-key="75"></audio>
+    <audio data-key="76"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
