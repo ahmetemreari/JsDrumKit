@@ -61,9 +61,9 @@ This project is licensed under the **MIT License**.
 
 ## 📞 İletişim (Contact)
 👑 **Geliştirici / Developer:** Ahmet Emre Arı  
-🌍 **Web Site:** [aemreari.com](https://www.aemreari.com.tr)  
+🌍 **Web Site:** [aemreari.com.tr](https://www.aemreari.com.tr)  
 📩 **E-Posta / Email:** info@aemreari.com.tr  
-🚀 **GitHub:** [github.com/aemreari](https://github.com/ahmetemreari)  
+🚀 **GitHub:** [github.com/ahmetemreari](https://github.com/ahmetemreari)  
 
 ---
 
